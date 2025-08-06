@@ -1,0 +1,29 @@
+{
+  "name": "cdk-imports-swap",
+  "version": "1.0.0",
+  "description": "This tool analyzes synthesized CDK templates (cdk.out directory), detects repeated Fn::ImportValue references to ExportsOutputFn outputs, and replaces them with cleaner, named exports—resulting in more readable and maintainable templates.",
+  "license": "MIT",
+  "author": "Yuriy Favi (iurii.favi+cdksi@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iuriifavi/cdk-imports-swap"
+  },
+  "type": "commonjs",
+  "bin": {
+    "cdk-imports-swap": "./dist/cdk-imports-swap.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cdk-imports-swap.js",
+    "prepublish": "tsc && chmod +x dist/cdk-imports-swap.js",
+    "publish": ""
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.0.0"
+}
