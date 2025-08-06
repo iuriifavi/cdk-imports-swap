@@ -14,8 +14,7 @@
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cdk-imports-swap.js",
-    "prepublish": "tsc && chmod +x dist/cdk-imports-swap.js",
-    "publish": ""
+    "prepublish": "tsc && chmod +x dist/cdk-imports-swap.js"
   },
   "devDependencies": {
     "@types/node": "^24.2.0",
